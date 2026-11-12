@@ -1,0 +1,57 @@
+# Dependencies and generated output
+node_modules/
+dist/
+build/
+coverage/
+.npm/
+
+# Environment files, secrets, and credentials
+.env
+.env.*
+!.env.example
+secrets/
+credentials/
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+
+# Logs, caches, temporary and operating-system files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.tmp
+*.temp
+*.swp
+*.swo
+*.bak
+*.orig
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
+
+# Unused Compass/Bearing starter pages and demo assets. These remain in the
+# workspace and are ignored so the AgroConsulting Plus repository stays focused.
+/404.html
+/about.html
+/article.html
+/book.html
+/contact.html
+/method.html
+/programs.html
+/resources.html
+/results.html
+/CHANGELOG.md
+/DOCS.md
+/assets/js/main.js
+/assets/img/favicon.svg
+/assets/img/guide-cover.svg
+/assets/img/nadia-portrait.svg
+/assets/img/og-image.png
+/assets/img/og-image.svg
+/assets/img/studio.svg
