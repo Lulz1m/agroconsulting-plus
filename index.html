@@ -163,30 +163,25 @@
       </div>
     </section>
 
-    <section aria-labelledby="map-title" class="py-16 sm:py-24">
+    <section id="kontakti" aria-labelledby="home-contact-title" class="bg-[#f8fbf7] py-16 sm:py-24">
       <div class="container-x">
-        <div class="mb-8 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
-          <div>
-            <p class="agro-section-label reveal">Na gjeni këtu</p>
-            <h2 id="map-title" class="reveal mt-4 font-display text-3xl font-semibold tracking-tight text-agro-charcoal sm:text-4xl">Vizitoni lokacionin tonë</h2>
-            <p class="mt-3 text-sm text-agro-charcoal/65">AgroConsulting Plus është e pranishme në Prizren, Kosovë.</p>
-            <p class="mt-2 text-sm text-agro-charcoal/65">Harta tregon lokacionin e përgjithshëm të qytetit, jo adresën e konfirmuar të zyrës.</p>
-          </div>
-          <a class="agro-button-secondary" href="https://www.google.com/maps/search/?api=1&amp;query=Prizren%2C%20Kosovo" target="_blank" rel="noopener noreferrer">Hapni Google Maps <span aria-hidden="true">↗</span></a>
-        </div>
-        <div class="overflow-hidden rounded-3xl border border-agro-gray bg-agro-green-light shadow-[0_16px_45px_-34px_rgb(37_37_37/0.28)]">
-          <iframe title="Harta e lokacionit të përgjithshëm në Prizren, Kosovë" src="https://www.google.com/maps?q=Prizren%2C%20Kosovo&amp;output=embed" class="aspect-[4/3] w-full sm:aspect-[16/7]" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
-        </div>
-      </div>
-    </section>
+        <div class="mb-9 max-w-2xl"><p class="agro-section-label reveal">Agro Consulting Plus</p><h2 id="home-contact-title" class="reveal mt-4 font-display text-3xl leading-tight font-semibold text-agro-charcoal sm:text-4xl lg:text-5xl">Keni një pyetje për shërbimet tona?</h2><p class="mt-4 leading-7 text-agro-charcoal/70">Na kontaktoni për më shumë informacion rreth shërbimeve tona dhe mënyrës se si mund t’ju ndihmojmë.</p></div>
+        <div class="grid items-start gap-6 lg:grid-cols-2 lg:gap-8">
+          <form data-contact-form class="agro-card grid content-start gap-x-4 gap-y-5 p-5 sm:grid-cols-2 sm:p-7 xl:gap-x-5 xl:gap-y-6" novalidate>
+            <div><label for="home-contact-name" class="mb-2.5 block text-sm font-semibold">Emri dhe mbiemri <span class="text-agro-green">*</span></label><input id="home-contact-name" name="name" data-contact-field type="text" autocomplete="name" required class="w-full rounded-xl border border-agro-gray bg-white px-4 py-3.5 text-base outline-none transition placeholder:text-agro-charcoal/40 focus:border-agro-green focus:ring-2 focus:ring-agro-green/15" placeholder="Emri juaj" aria-describedby="home-name-error"><p id="home-name-error" data-error-for="name" class="mt-1 hidden text-sm text-red-700"></p></div>
+            <div><label for="home-contact-email" class="mb-2.5 block text-sm font-semibold">Email-i <span class="text-agro-green">*</span></label><input id="home-contact-email" name="email" data-contact-field type="email" autocomplete="email" inputmode="email" required class="w-full rounded-xl border border-agro-gray bg-white px-4 py-3.5 text-base outline-none transition placeholder:text-agro-charcoal/40 focus:border-agro-green focus:ring-2 focus:ring-agro-green/15" placeholder="emri@shembull.com" aria-describedby="home-email-error"><p id="home-email-error" data-error-for="email" class="mt-1 hidden text-sm text-red-700"></p></div>
+            <div class="sm:col-span-2 xl:col-span-1"><label for="home-contact-phone" class="mb-2.5 block text-sm font-semibold">Numri i telefonit <span class="text-xs font-normal text-agro-charcoal/55">(opsional)</span></label><input id="home-contact-phone" name="phone" data-contact-field type="tel" autocomplete="tel" inputmode="tel" class="w-full rounded-xl border border-agro-gray bg-white px-4 py-3.5 text-base outline-none transition placeholder:text-agro-charcoal/40 focus:border-agro-green focus:ring-2 focus:ring-agro-green/15" placeholder="+383 ..." aria-describedby="home-phone-error"><p id="home-phone-error" data-error-for="phone" class="mt-1 hidden text-sm text-red-700"></p></div>
+            <div class="sm:col-span-2"><label for="home-contact-message" class="mb-2.5 block text-sm font-semibold">Mesazhi <span class="text-agro-green">*</span></label><textarea id="home-contact-message" name="message" data-contact-field rows="5" minlength="20" maxlength="3000" required class="w-full resize-y rounded-xl border border-agro-gray bg-white px-4 py-3.5 text-base outline-none transition placeholder:text-agro-charcoal/40 focus:border-agro-green focus:ring-2 focus:ring-agro-green/15" placeholder="Shkruani mesazhin tuaj (të paktën 20 karaktere)" aria-describedby="home-message-error"></textarea><p id="home-message-error" data-error-for="message" class="mt-1 hidden text-sm text-red-700"></p></div>
+            <div class="sm:col-span-2"><button data-form-submit type="submit" class="agro-button-primary min-w-48 w-full sm:w-auto">Dërgo mesazhin <span aria-hidden="true">→</span></button><p data-form-status class="mt-3 min-h-6 text-sm leading-6" role="status" aria-live="polite"></p><p class="text-xs leading-5 text-agro-charcoal/55">Dërgimi me formular do të aktivizohet pasi të konfigurohet një access key i ri Web3Forms.</p><div class="mt-5 flex flex-col gap-3 border-t border-agro-gray pt-5 text-sm sm:flex-row sm:flex-wrap sm:items-center sm:gap-x-6">
+              <a href="tel:+38344229855" class="inline-flex min-w-0 items-center gap-3 font-semibold text-agro-charcoal hover:text-agro-green-dark"><span class="grid size-10 shrink-0 place-items-center rounded-full bg-agro-green-light text-agro-green-dark"><svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 16.4v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 1.1 3.7 2 2 0 0 1 3.1 1.5h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L7 9.5a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></svg></span><span>+383 44 229 855</span></a>
+              <a href="mailto:agro.consultingplus@outlook.com" class="inline-flex min-w-0 items-center gap-3 break-all font-semibold text-agro-charcoal/75 hover:text-agro-green-dark"><span class="grid size-10 shrink-0 place-items-center rounded-full bg-agro-green-light text-agro-green-dark"><svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></span><span class="break-all">agro.consultingplus@outlook.com</span></a>
+            </div></div>
+          </form>
 
-    <section id="kontakti" class="px-5 py-16 sm:px-8 sm:py-24">
-      <div class="container-x relative overflow-hidden rounded-[2rem] bg-agro-charcoal px-6 py-10 text-white sm:px-10 sm:py-14 lg:px-16 lg:py-16">
-        <div aria-hidden="true" class="pointer-events-none absolute -right-20 -top-28 size-80 rounded-full border border-white/10"></div>
-        <div aria-hidden="true" class="pointer-events-none absolute -right-8 -top-16 size-56 rounded-full border border-white/10"></div>
-        <div class="relative grid gap-8 lg:grid-cols-[1fr_auto] lg:items-center">
-          <div class="max-w-2xl"><p class="text-xs font-bold tracking-[0.16em] text-[#9ed394] uppercase">Agro Consulting Plus</p><h2 class="mt-4 font-display text-3xl leading-tight font-semibold sm:text-4xl lg:text-5xl">Keni një pyetje për shërbimet tona?</h2><p class="mt-4 leading-7 text-white/75">Na kontaktoni për dezinfektim, dezinsektim, deratizim ose asistencë për agrobiznes.</p></div>
-          <div class="flex flex-col gap-3 sm:flex-row lg:flex-col"><a href="tel:+38344229855" class="agro-button-primary bg-white text-agro-charcoal shadow-none hover:bg-agro-green-light">Telefononi <span aria-hidden="true">↗</span></a><a href="mailto:agro.consultingplus@outlook.com" class="agro-button border border-white/35 text-white hover:border-white hover:bg-white/10">Dërgoni email</a></div>
+          <div class="rounded-3xl border border-agro-gray/80 bg-white p-5 shadow-[0_16px_45px_-34px_rgb(37_37_37/0.28)] sm:p-7">
+            <div class="mb-6"><p class="agro-section-label reveal">Na gjeni këtu</p><h3 class="reveal mt-3 font-display text-2xl font-semibold tracking-tight text-agro-charcoal sm:text-3xl">Vizitoni lokacionin tonë</h3><p class="mt-4 text-sm leading-6 text-agro-charcoal/70">AgroConsulting Plus është e pranishme në Prizren, Kosovë.</p><a class="mt-5 inline-flex" href="https://www.google.com/maps/search/?api=1&amp;query=Prizren%2C%20Kosovo" target="_blank" rel="noopener noreferrer"><span class="agro-button-secondary">Hapni Google Maps <span aria-hidden="true">↗</span></span></a></div>
+            <div class="overflow-hidden rounded-2xl border border-agro-gray bg-agro-green-light"><iframe title="Harta e lokacionit të përgjithshëm në Prizren, Kosovë" src="https://www.google.com/maps?q=Prizren%2C%20Kosovo&amp;output=embed" class="aspect-[4/3] w-full" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+          </div>
         </div>
       </div>
     </section>
@@ -204,5 +199,6 @@
   </footer>
 
   <script src="assets/js/agro.js"></script>
+  <script src="assets/js/contact.js"></script>
 </body>
 </html>
