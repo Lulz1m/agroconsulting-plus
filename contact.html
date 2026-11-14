@@ -17,11 +17,11 @@
   <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-lg focus:bg-white focus:px-4 focus:py-3 focus:text-agro-charcoal focus:shadow-lg">Kalo te përmbajtja</a>
 
   <header id="site-header" class="sticky top-0 z-50 border-b border-transparent bg-white/95 backdrop-blur-md transition duration-300 [&.is-scrolled]:border-agro-gray [&.is-scrolled]:shadow-[0_12px_30px_-28px_rgb(37_37_37/0.5)]">
-    <div class="container-x flex min-h-[5.25rem] items-center gap-4 py-2">
+    <div class="container-x relative flex min-h-[5.25rem] items-center gap-4 py-2">
       <a href="index.html#top" class="shrink-0 rounded-lg focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-agro-green" aria-label="Agro Consulting Plus — Ballina">
         <img src="assets/img/agro/logo.png" alt="Agro Consulting Plus" width="431" height="144" class="h-12 w-auto object-contain sm:h-[3.55rem]">
       </a>
-      <nav aria-label="Navigimi kryesor" class="ml-auto hidden lg:block">
+      <nav aria-label="Navigimi kryesor" class="absolute left-1/2 hidden -translate-x-1/2 lg:block">
         <ul class="flex items-center gap-1">
           <li><a href="index.html#top" class="rounded-full px-3 py-2 text-sm font-semibold text-agro-charcoal transition hover:bg-agro-green-light hover:text-agro-green-dark">Ballina</a></li>
           <li><a href="about.html" class="rounded-full px-3 py-2 text-sm font-semibold text-agro-charcoal transition hover:bg-agro-green-light hover:text-agro-green-dark">Rreth Nesh</a></li>
@@ -30,7 +30,6 @@
           <li><a href="contact.html" class="rounded-full bg-agro-green-light px-3 py-2 text-sm font-semibold text-agro-green-dark" aria-current="page">Kontakti</a></li>
         </ul>
       </nav>
-      <a href="#formulari" class="agro-button-primary ml-auto hidden min-h-11 px-5 text-sm lg:inline-flex">Na kontaktoni <span aria-hidden="true">↗</span></a>
       <button type="button" id="menu-button" class="ml-auto grid size-11 place-items-center rounded-full border border-agro-gray text-agro-charcoal transition hover:bg-agro-green-light lg:hidden" aria-expanded="false" aria-controls="mobile-menu" aria-label="Hap menynë">
         <span data-icon-open><svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></span>
         <span data-icon-close class="hidden"><svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></span>
