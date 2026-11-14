@@ -1,9 +1,8 @@
-/* Shared AgroConsulting Plus contact-form validation and optional Web3Forms submission. */
+/* Shared AgroConsulting Plus contact-form validation and Web3Forms submission. */
 (function () {
   'use strict';
 
-  window.AGRO_WEB3FORMS_ACCESS_KEY = window.AGRO_WEB3FORMS_ACCESS_KEY || '';
-  var accessKey = window.AGRO_WEB3FORMS_ACCESS_KEY;
+  var accessKey = 'd3debd32-5b40-40b6-bcde-e1dec3be7cb1';
 
   document.querySelectorAll('[data-contact-form]').forEach(function (form) {
     var submitButton = form.querySelector('[data-form-submit]');
